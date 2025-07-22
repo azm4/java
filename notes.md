@@ -55,6 +55,58 @@ Specifies how to access Classes & Methods. They are all keywords.
 > - Protected
 > - Default
 ### Naming Conventions
+Ways of naming things in Java. There are many. Some are given here. 
+- **Pascal case convention**: The first letter of each word is **uppercase**.
+  > Example: **T**his**I**s**AN**ame  
+  > They are used in **Classes**.
+- **Camel case convention**: Similar to **Pascal case convention** except the *first letter of the first word* is **lowercase**.
+  > Example: this**I**s**AN**ame  
+  > Used in **Variables** & **Methods**.
+- **Snake case convention**: Every letter is **lowercase**. However, there is an underscore `_` after every letter except the last one.
+  > Example: this_is_a_name
+### Java Program Structure
+```java
+public class Main {            // <access modifier> <keyword> <class_name>
+    public static void main (String[] args) { // <access modifier> <modifier> <return_type> <name> <parameters>
+        // code block
+    }
+}
+```
+- Declaration of the **Class**
+  > **public** = Access Modifier. Not always necessary.  
+  > **class**  = Keyword for declaring a **Class**.     
+  > **Main**   = name of the **Class**. It follows the **Pascal** naming convention.  
+- Declaration of the **Method**
+  > **public** = Access Modifier.  
+  > **static** = Modifier. It means that this **method** belongs to this class, not to **objects**.  
+  > **void**   = Return type.  
+  > **main**   = Method name. Follows the **Camel** naming convention.
+#### Takeaways: 
+- Each Java program has atleast one class.
+- **Pascal** case is used with Classes.
+- **Camel** case is used with Methods.
+- A **Method** exists inside a Class.
+- **main()** is a method. It is the starting point of a java program.
+- Every Java program has a **main()**.
+### Packages
+They are a container for Classes. 
+# Displaying Messages in a Java Program
+> - Strings
+> - print & println methods
+> - `System` Class
+### Strings
+A **String** is a group of characters. It should be put in **double quotes** `" "`.
+### print & println
+They are **Methods**, similar to functions in **C**.
+```java
+System.out.print("hello"); // calling print
+```
+> **print/println** = Method. **println** is the same as print except it prints an linebreak at the end of the output.
 
-
-
+> **out** = an **Object** of the **PrintStream** Class.
+> - It contains **Methods**.
+> - We use `.` operator to access the methods within **out** object.
+> - Example: out`.`
+> - **out** refers to the standart output device.
+### `System` Class
+Follows the `Pascal` naming convention.
