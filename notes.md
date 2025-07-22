@@ -100,6 +100,7 @@ A **String** is a group of characters. It should be put in **double quotes** `" 
 They are **Methods**, similar to functions in **C**.
 ```java
 System.out.print("hello"); // calling print
+// We access the "System" class to find the "out" field so that, we can use methods like print/println and many more.
 ```
 > **print/println** = Method. **println** is the same as print except it prints an linebreak at the end of the output.
 
@@ -109,4 +110,16 @@ System.out.print("hello"); // calling print
 > - Example: out`.`
 > - **out** refers to the standart output device.
 ### `System` Class
-Follows the `Pascal` naming convention.
+Follows the **Pascal** naming convention.
+> out is inside **System**.  
+> out is a field of **System**.
+
+# Displaying Numbers in Java
+```Java
+System.out.println(4);
+System.out.println(4+5);
+System.out.println(4-2);
+System.out.println(4*3);
+System.out.println(4/2);
+```
+We can use all normal Arithmatic Operators.
